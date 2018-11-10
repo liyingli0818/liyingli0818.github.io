@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Instagram's Robot Accounts Detector</title>
+        <link rel"stylesheet" href="index.css">
+        <meta name="description" content="Hello world demo written in Brython www.brython.info">
+        <meta name="keywords" content="Python,Brython">
+        <meta charset="iso-8859-1">
+        <script type="text/javascript" src="brython/brython.js"></script>
+    </head>
+    <body onload="brython(1)">
+        <script type="text/python">
+        from browser import document, alert
+        
+        def echo(ev):
+            alert("Hello, {}! This is a cat picture:".format(document["zone"].value))
+            
+
+
+
+        document["test"].bind("click", echo)
+
+        </script>
+
+        <p>Your name : <input id="zone" autocomplete="off">
+        <button id="test">click to see cat picture </button>
+        <h1 style="color:palevioletred">Dogs</h1><a href = "http://en.wikipedia.org/wiki/Dog">Dogs wiki page</a>
+        <h2>Mossy</h2>
+        <img src="dog.png"/>
+        <p>Mossy is amaze.</p>
+        <h1 class="species">Cats</h1>
+        <img src="giphy.gif" style="width:300px;height:300px;">
+        <h1 class="species">Pigs</h1>
+        <h1 class="size">Large</h1>
+        <img src="Colors09.png"/>
+    </body>
+</html>
