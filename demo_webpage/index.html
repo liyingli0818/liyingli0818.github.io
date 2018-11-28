@@ -1,5 +1,11 @@
 <html>
     <head>
+    <style>
+            div.a {
+                    text-align: center;
+            }
+    </style>
+                    
         <title>Instagram's Robot Accounts Detector</title>
         <link rel"stylesheet" href="index.css">
         <meta name="description" content="Hello world demo written in Brython www.brython.info">
@@ -48,7 +54,8 @@
                 <a href="#contact">Contact</a>
                 <a href="#github">Github</a>
             </div>
-            <h1 style="color:#819c9c">Instagram Fake Followers Detector</h1>
+            <div class="a"><h1 style="color:#819c9c">Instagram Fake Followers Detector</h1></div>
+            
     <body onload="brython(1)">
         <script type="text/python">
         from browser import document, alert
@@ -63,29 +70,34 @@
 
         </script>
         <p> 
+                <div class="a">
                 <img src="ins_logo.png" style="width:35px;height:35px;"/>
-                   Type an Instagram username: <input id="zone" autocomplete="off">
+                   Enter an Instagram username: <input id="zone" autocomplete="off">
             <button id="test">Check! </button>
         </p>
+        <link href="index.css" rel="stylesheet" type="text/css" />
+        <p>
         <div class="col s4">
             <div class="switch">
                 <label>
                     Fake
-                    <input type="checkbox">
-                    <span class="lever"></span>
+                    <label class="switch"><input type="checkbox" id="togBtn">
+                        <div class="slider round"><!--ADDED HTML -->
+                            <span class="on"></span><span class="off"></span><!--END-->
+                        </div></label>
                     Not Fake
                 </label>
             </div>
+            </div>
         </div>
-       
-
-        <p>Some users they have few followers. However, they have thousands of users they are following. It could be skeptical.</p>
-        <h1 style="color:#A9A9A9"class="wiki">Wiki</h1>
-        <h1 style="color:#A9A9A9"class="contact">Contact</h1>
-        <h1 style="color:#A9A9A9"class="about">About</h1>
-        <h1 style="color:#A9A9A9"class="github">Github</h1>
-        <img src="Colors09.png"/>
-        <a href = "https://en.wikipedia.org/wiki/Social_bot">Social Bot wiki page</a>
+        </p>
+        <br>
+        <br>
+        <div class="a"><h1 style="color:#A9A9A9"class="wiki">Wiki</h1></div>
+        <div class="a"><h1 style="color:#A9A9A9"class="contact">Contact</h1></div>
+        <div class="a"><h1 style="color:#A9A9A9"class="about">About</h1></div>
+        <div class="a"><h1 style="color:#A9A9A9"class="github">Github</h1></div>
+        <div class="a"><a href = "https://en.wikipedia.org/wiki/Social_bot">Social Bot wiki page</a></div>
     </body>
 </html>
 
